@@ -1,0 +1,111 @@
+body{
+    margin: 0;
+    padding: 0;
+    mix-blend-mode:color-burn;
+
+    .leaf {
+        position: absolute;
+        top: -100px;
+        width: 100px;
+        height: 100px;
+        background-image: url(../img/leaf.avif);
+        background-size: cover;
+        background-color: green;
+        animation: fall 5s linear infinite;
+    }
+    .leaf1 {
+        top: -100px;
+
+        left: 50px;
+    }
+    
+    .leaf2 {
+        top: -100px;
+
+        left: 200px;
+        animation-delay: 1s;
+    }
+    
+    .leaf3 {
+        top: -100px;
+
+        left: 350px;
+        animation-delay: 2s;
+
+    }
+    .leaf4{
+        top: -100px;
+
+        right: 200px;
+
+    }
+    
+    .leaf5 {
+        top: -100px;
+
+        right: 300px;
+        animation-delay: 1s;
+
+    }
+    
+    .leaf6 {
+        top: -100px;
+
+        right: 600px;
+        animation-delay: 2s;
+
+
+    }
+
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    width: 600px;
+    height: 442px;
+    margin: 0 auto;
+    border-radius: 50%;
+    &__moon{
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/moonphase-removebg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        mix-blend-mode:color-burn;
+        animation: eternalTsukuomi infinite 10s linear;
+    }
+
+
+}
+
+@keyframes eternalTsukuomi {
+    0%{
+        transform: rotateZ(0);
+    }
+    100%{
+        transform: rotateZ(360deg);
+
+    }
+}
+@keyframes fall {
+    0% {
+        transform: translate(0, -100px) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(400px, 800px) rotate(720deg);
+        opacity: 0;
+    }
+}
+@keyframes fall2 {
+    0% {
+        transform: translate(0, -100px) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(400px, 800px) rotate(720deg);
+        opacity: 0;
+    }
+}
